@@ -1,14 +1,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import ProductDetails from "./ProductDetails";
-function Product({category,title,price,imgUrl}){
+function Product({item}){
     return(
-     <div className="bg-red-600 ">
-        <h1>{category}</h1>
-        <h2>{title}</h2>
-        <h3>{price}</h3>
-        <img src={imgUrl}/>
-        <Link to="/products/1">View details</Link>
+     <div className="m-4 bg-slate-400 pb-4 h-80 w-80 rounded-md space-y-2 pl-4 text-xl">
+        <h1 >{item.category}</h1>
+        <h2>{item.title}</h2>
+        <h3>Rs.{item.price}</h3>
+        <img className=" h-36 w-36 " src={item.thumbnail}/>
+        <Link to="/products/1">VIEW DETAILS</Link>
      </div>
     );
 }

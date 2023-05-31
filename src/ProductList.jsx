@@ -10,7 +10,7 @@ function ProductList({products}){
        title={item.title}
        category={item.category}
        price={item.price}
-       imgUrl={item.imgUrl}
+       thumbnail={item.thumbnail}
        />);
       })}
       
